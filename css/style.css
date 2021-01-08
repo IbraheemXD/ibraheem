@@ -1,0 +1,102 @@
+body{
+  background-color: #EAF6F6;
+}
+hr{
+  background-color: #EAF6F6;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+}
+h1,h2 {
+  color: #66BFBF;
+  font-family: Georgia ;
+}
+
+p {
+  font-family: Helvetica ;
+}
+
+p:hover {
+  font-weight: bold;
+}
+
+td {
+  font-family: Georgia ;
+}
+
+td:hover {
+  font-weight: bold;
+}
+h1:hover {
+  color: black;
+}
+h2:hover {
+  color: black;
+}
+
+.circular {
+  border-radius: 100%;
+}
+.button {
+  display: inline-block;
+  background-color: #184d47;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.button2 {
+  display: inline-block;
+  background-color: #184d47;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+}
+.a {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  color: #EAF6F6;
+}
+
+.a2 {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  text-decoration: none;
+  color: #EAF6F6;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+.button2:hover {
+  background-color: black;
+}
+
+.position {
+  position: relative;
+  left: 15px;
+}
+
+.position1 {
+  position: relative;
+  left: 30px;
+}
+
+.mobile {
+  position: static;
+}
+
+@media screen and (max-width: 531px) {
+    .mobile {
+	         position : relative;
+			     left : 140px;
+	}
+}
