@@ -1,50 +1,43 @@
-body{
+/********************** TAGS SELECTOR ***************************/
+body {
   background-color: #EAF6F6;
 }
-hr{
+
+hr {
   background-color: #EAF6F6;
-  border-style: none;
-  border-top-style: dotted;
+  border-style: dotted none none none;
   border-color: grey;
   border-width: 5px;
   width: 5%;
 }
-h1,h2 {
+
+h1, h2 {
   color: #66BFBF;
-  font-family: Georgia ;
+  font-family: Georgia;
 }
 
 p {
-  font-family: Helvetica ;
-}
-
-p:hover {
-  font-weight: bold;
+  font-familL2y: Helvetica;
 }
 
 td {
-  font-family: Georgia ;
+  font-family: Georgia;
 }
 
-td:hover {
-  font-weight: bold;
-}
-h1:hover {
-  color: black;
-}
-h2:hover {
-  color: black;
-}
+/********************** CLASS SELECTOR ***************************/
 
 .circular {
   border-radius: 100%;
 }
+
 .button {
   display: inline-block;
   background-color: #184d47;
   height: 40px;
   width: 100px;
-  border-radius: 5px;
+  border-radius: 32px;
+  text-align: center;
+  box-shadow: 5px 5px 18px #888888;
 }
 
 .button2 {
@@ -52,14 +45,24 @@ h2:hover {
   background-color: #184d47;
   height: 40px;
   width: 100px;
-  border-radius: 5px;
+  border-radius: 32px;
+  text-align: center;
+  box-shadow: 5px 5px 18px #888888;
 }
+input[type="submit"]{
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  border-radius: 32px;
+  text-align: center;
+  box-shadow: 5px 5px 18px #888888;
+}
+
 .a {
   display: inline-block;
+  text-decoration: none;
   position: relative;
   top: 10px;
-  left: 10px;
-  text-decoration: none;
   color: #EAF6F6;
 }
 
@@ -67,9 +70,46 @@ h2:hover {
   display: inline-block;
   position: relative;
   top: 10px;
-  left: 20px;
   text-decoration: none;
   color: #EAF6F6;
+}
+
+
+.position1 {
+  position: relative;
+}
+
+.position2 {
+  position: relative;
+  left: 15px;
+}
+
+.position3 {
+  position: relative;
+  left: 30px;
+}
+
+.mobile {
+  position: static;
+  display: inline-block;
+}
+
+/********************** hover effect ***************************/
+
+p:hover {
+  font-weight: bold;
+}
+
+td:hover {
+  font-weight: bold;
+}
+
+h1:hover {
+  color: black;
+}
+
+h2:hover {
+  color: black;
 }
 
 .button:hover {
@@ -80,23 +120,31 @@ h2:hover {
   background-color: black;
 }
 
-.position {
-  position: relative;
-  left: 15px;
-}
-
-.position1 {
-  position: relative;
-  left: 30px;
-}
-
-.mobile {
-  position: static;
-}
+/******************** MOBILE VIEW *****************************/
 
 @media screen and (max-width: 531px) {
-    .mobile {
-	         position : relative;
-			     left : 140px;
-	}
+  .mobile {
+    position: relative;
+    left: 140px;
+  }
+
+  .position1 {
+    position: relative;
+    left: 100px
+  }
+
+  .position2 {
+    position: relative;
+    left: 120px;
+  }
+
+  .position3 {
+    position: relative;
+    left: 140px;
+  }
+
+  hr {
+    width: 10%;
+  }
 }
+/**********************************************************/
